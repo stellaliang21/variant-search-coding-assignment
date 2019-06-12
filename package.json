@@ -7,7 +7,7 @@
   "description": "## Assignment",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch",
+    "test": "jest",
     "test:coverage": "jest --coverage --colors",
     "start": "nodemon server/index.js",
     "react-dev": "webpack -d --watch"
@@ -29,7 +29,9 @@
     "body-parser": "^1.19.0",
     "css-loader": "^3.0.0",
     "express": "^4.17.1",
+    "identity-obj-proxy": "^3.0.0",
     "jest-enzyme": "^7.0.2",
+    "jest-transform-css": "^2.0.0",
     "pg-promise": "^8.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
