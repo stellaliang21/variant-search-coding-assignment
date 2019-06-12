@@ -1,5 +1,11 @@
 # Variant Search Coding Assignment
 
+## Scripts
+
+npm run react-dev (webpack -d --watch)
+npm start (nodemon server/index.js)
+npm run test (jest)
+
 ## Assignment
 
 Create a web application that allows a user to search for genomic variants by gene name and display the results in a tabular view.
