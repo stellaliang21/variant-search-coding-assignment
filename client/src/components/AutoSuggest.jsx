@@ -1,5 +1,5 @@
 import React from 'react';
-// import './AutoSuggest.css';
+import './AutoSuggest.css';
 
 class AutoSuggest extends React.Component {
   constructor(props) {
@@ -31,6 +31,7 @@ class AutoSuggest extends React.Component {
 
   renderSuggestions() {
     const { suggestions } = this.state;
+  
     if (suggestions.length === 0) {
       return null;
     }
