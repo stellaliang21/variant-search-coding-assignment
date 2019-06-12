@@ -1,15 +1,23 @@
 module.exports = {
 
+  transform: {
+    '^.+\\.jsx?$': 'babel-jest',
+    '^.+\\.css$': 'jest-transform-css',
+  },
+
+  moduleNameMapper: {
+    '\\.(css|less)$': 'identity-obj-proxy',
+  },
+
   transformIgnorePatterns: ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"],
 
   clearMocks: true,
 
-
-  collectCoverageFrom: ['client/src/**/*.{js,jsx,mjs,css}'],
+  collectCoverageFrom: ['client/src/**/*.{js,jsx,mjs}'],
 
   coverageDirectory: 'coverage',
 
-  moduleFileExtensions: ['js', 'json', 'jsx', 'css'],
+  moduleFileExtensions: ['js', 'json', 'jsx'],
 
   setupFiles: ['<rootDir>/enzyme.config.js'],
 
